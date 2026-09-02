@@ -115,4 +115,28 @@ else{
     console.log(`${alphabet} est miniscule`)
 };
 
-//challenge 10
+//challenge 11
+let nombre_aleatoire=Math.floor(Math.random()*7)+1;
+switch(nombre_aleatoire){
+    case 1:
+        console.log("Lundi");
+        break;
+    case 2:
+        console.log("Mardi");
+        break;
+    case 3:
+        console.log("Mercredi");
+        break;
+    case 4:
+        console.log("Jeudi");
+        break;
+    case 5:
+        console.log("Vendredi");
+        break;
+    case 6:
+        console.log("Samedi");
+        break;
+    default:
+        console.log("Dimanche")
+        break;
+}
