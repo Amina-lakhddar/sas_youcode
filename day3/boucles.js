@@ -63,23 +63,23 @@ let prompt=require('prompt-sync')();
 // }while(nombre5>=10);
 // console.log(nombre5);
 
-// //challenge 8
-// const n=prompt("entrez un nombre entier : ");
-// let Fn;
-// let Fn0=0;
-// let Fn1=1;
-// for(let i=1;i<n;i++){
-//     if(n==0){
-//         Fn=0;
-//     }else if(n==1){
-//         Fn=1;
-//     }else{
-//         Fn=Fn1+Fn0;
-//         Fn0=Fn1;
-//         Fn1=Fn;
-//     };
-// };
-// console.log(Fn);
+//challenge 8
+const n=prompt("entrez un nombre entier : ");
+let Fn;
+let Fn0=0;
+let Fn1=1;
+for(let i=1;i<n;i++){
+    if(n==0){
+        Fn=0;
+    }else if(n==1){
+        Fn=1;
+    }else{
+        Fn=Fn1+Fn0;
+        Fn0=Fn1;
+        Fn1=Fn;
+    };
+};
+console.log(Fn);
 // //challenge 9
 // let i=1;
 // let nombre=prompt("entrez un nombre positif : ")
@@ -89,10 +89,11 @@ let prompt=require('prompt-sync')();
 // };
 // console.log(i);
 
-//challenge 10 
-const entier=prompt("entrer un nombre entier : ");
-let somme=0;
-for(let i=1;i<=entier;i++){
-    somme=somme+i;
-};
-console.log(somme);
+// //challenge 10 
+// const entier=prompt("entrer un nombre entier : ");
+// let somme=0;
+// for(let i=1;i<=entier;i++){
+//     somme=somme+i;
+// };
+// console.log(somme);
+
