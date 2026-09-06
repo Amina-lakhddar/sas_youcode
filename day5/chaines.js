@@ -59,15 +59,18 @@ let prompt=require('prompt-sync')();
 // //challenge 8
 // const chaine8=prompt("entrez une chaine de caractere :");
 // console.log(chaine8.toLowerCase());
-// //challenge 9
+//challenge 9
 
-// const chaine9=prompt("entrez une chaine de caractere :");
-// for(i=0;i<=chaine9.length-1;i++){
-//     if(chaine9[i]==" "){
-//         continue
-//     };
-//     console.log(chaine9[i])
-// };
+const chaine9=prompt("entrez une chaine de caractere :");
+let a=0;
+for(i=0;i<=chaine9.length-1;i++){
+    if(chaine9[i]==" "){
+        continue
+    }else{
+        a++;
+    }
+};
+console.log(a)
 // //challenge 10
 // const chaine10=prompt("entrez une chaine du caractere : ");
 // const sous_chaine=prompt("entrez une sous chaine :");
@@ -77,33 +80,32 @@ let prompt=require('prompt-sync')();
 //     console.log("il n'existe pas")
 // };
 
-//challenge palindrome
-//methode 1
-const chaine11=prompt("entrez un mot :")
-let inverse=""
-for(i=chaine11.length-1;i>=0;i--){
-    inverse=inverse+chaine11[i];
-};
-if(chaine11===inverse){
-    console.log(`${chaine11} est palindrome`)
-}
-else{
-    console.log(`${chaine11} n'est pas palindrome`)
-};
-//methode 2
-let i=0;
-let j=chaine11.length-1;
-est_palnidrome=true;
-do{
-    if(chaine11[i]!=chaine11[j]){
-        est_palnidrome=false;
-    };
-    i++;
-    j--;
-}while(i<=chaine11.length-1 && j>=0);
-if(est_palnidrome){
-     console.log(`${chaine11} est palindrome`)
-}else{
-    console.log(`${chaine11} n'est pas palindrome`)
-};
-
+// //challenge palindrome
+// //methode 1
+// const chaine11=prompt("entrez un mot :")
+// let inverse=""
+// for(i=chaine11.length-1;i>=0;i--){
+//     inverse=inverse+chaine11[i];
+// };
+// if(chaine11===inverse){
+//     console.log(`${chaine11} est palindrome`)
+// }
+// else{
+//     console.log(`${chaine11} n'est pas palindrome`)
+// };
+// //methode 2
+// let i=0;
+// let j=chaine11.length-1;
+// est_palnidrome=true;
+// do{
+//     if(chaine11[i]!=chaine11[j]){
+//         est_palnidrome=false;
+//     };
+//     i++;
+//     j--;
+// }while(i<=chaine11.length-1 && j>=0);
+// if(est_palnidrome){
+//      console.log(`${chaine11} est palindrome`)
+// }else{
+//     console.log(`${chaine11} n'est pas palindrome`)
+// };
